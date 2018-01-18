@@ -115,17 +115,18 @@
       });
       if (this.options.navigation.active) {
         prevButton = $("<a>", {
-          "class": "slidesjs-previous slidesjs-navigation icon-chevron-left",
+          "class": "slidesjs-previous slidesjs-navigation",
           href: "#",
-          title: "",
-          text: ""
+          title: "anterior",
+          text: "Anterior"
         }).appendTo($element);
         nextButton = $("<a>", {
           "class": "slidesjs-next slidesjs-navigation icon-chevron-right",
           href: "#",
-          title: "",
+          title: "Siguiente",
           text: ""
         }).appendTo($element);
+        prevButton.html("&#9654;")
       }
       $(".slidesjs-next", $element).click(function(e) {
         e.preventDefault();
@@ -139,10 +140,10 @@
       });
       if (this.options.play.active) {
         playButton = $("<a>", {
-          "class": "slidesjs-play slidesjs-navigation icon-play",
+          "class": "slidesjs-play slidesjs-navigation fas fa-play",
           href: "#",
           title: "play",
-          text: ""
+          text: " "
         }).appendTo($element);
         stopButton = $("<a>", {
           "class": "slidesjs-stop slidesjs-navigation",
